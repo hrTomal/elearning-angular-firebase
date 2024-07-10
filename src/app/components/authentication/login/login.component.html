@@ -1,0 +1,39 @@
+<!-- <div>
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <label for="email">Email:</label>
+      <input type="email" [(ngModel)]="email" name="email" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" [(ngModel)]="password" name="password" required />
+      <br />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+   -->
+
+  <div class="login-container">
+    <mat-card class="image-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/005/879/539/original/cloud-computing-modern-flat-concept-for-web-banner-design-man-enters-password-and-login-to-access-cloud-storage-for-uploading-and-processing-files-illustration-with-isolated-people-scene-free-vector.jpg" alt="Login Image">
+    </mat-card>
+    <mat-card class="login-card">
+      <div class="login-logo">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+      </div>
+      <h2>Member Login</h2>
+      <form (ngSubmit)="login()">
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput [(ngModel)]="email" type="email" name="email" required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput [(ngModel)]="password" type="password" name="password" required>
+        </mat-form-field>
+        <button type="submit" mat-raised-button color="primary" class="login-button">Login</button>
+      </form>
+      <a href="#" class="forgot-link">Forgot Username / Password?</a>
+      <a href="#" class="create-account-link">Create your Account →</a>
+    </mat-card>
+  </div>
+  
